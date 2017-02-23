@@ -60,6 +60,7 @@
 .todo-list > li {
     position: relative;
     border-bottom: 1px solid #ededed;
+    padding: 10px 0;
 }
 .todo-list > li span:first-child {
     top: 0;
