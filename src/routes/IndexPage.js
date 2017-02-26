@@ -28,7 +28,7 @@ const IndexPage = React.createClass({
                             return (
                               <li key = {index}>
                                 <span className = { cx({[styles.checked]: todo.checked }) } onClick = { this.clickCheck.bind(this, index) }></span>
-                                    <span className = { styles.content }>{ todo.content }</span>
+                                    <span className = { cx(styles.content, {[styles.completed]: todo.checked }) }>{ todo.content }</span>
                                     <span onClick = { this.clickClearOne.bind(this, index) }>x</span>
                                 </li>
                             );
